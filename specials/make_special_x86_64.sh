@@ -14,9 +14,9 @@ else
         rm ./${ARCH}/hh_k.c
         cp ~/genie/genie/transpiler/tmp/hh_k.c ${ARCH}/hh_k.c
     else
-        echo "default"
-        rm ./${ARCH}/hh_k.c
-        cp ./hh_k7_3.c ${ARCH}/hh_k.c
+        echo "bench"
+        #rm ./${ARCH}/hh_k.c
+        #cp ./hh_k7_3.c ${ARCH}/hh_k.c
     fi
 fi
 ../exec/${ARCH}/bin/nrnivmodl ../mod
