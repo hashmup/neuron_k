@@ -10,9 +10,11 @@ then
 else
     if [ $1 == 'True' ]
     then
+        echo "genie"
         rm ./${ARCH}/hh_k.c
         cp ~/genie/genie/transpiler/tmp/hh_k.c ${ARCH}/hh_k.c
     else
+        echo "default"
         rm ./${ARCH}/hh_k.c
         cp ./hh_k7_3.c ${ARCH}/hh_k.c
     fi
