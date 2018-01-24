@@ -3,7 +3,7 @@
 ARCH=$1
 
 rm -r ${ARCH}
-../exec/${ARCH}/bin/nrnivmodl ../mod
+../exec$3/${ARCH}/bin/nrnivmodl ../mod
 if [ $# -eq 1 ]
 then
     echo "optimized"
@@ -21,4 +21,4 @@ else
         #cp ./hh_k7_3.c ${ARCH}/hh_k.c
     fi
 fi
-../exec/${ARCH}/bin/nrnivmodl ../mod
+../exec$3/${ARCH}/bin/nrnivmodl ../mod
