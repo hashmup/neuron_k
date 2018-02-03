@@ -203,7 +203,7 @@ proc spikeout() { local i, count, rank localobj fobj, tmpmt
     if(pc.id == 0){ printf("\n\ttime [ms]\t cell_id\n") }
     pc.barrier()
     for i=0, tvec.size()-1{
-	printf("SPIKE : \t %f\t %d\n", tvec.x[i], idvec.x[i])
+	printf("SPIKE : \t %f\t %d\t %d\n", tvec.x[i], idvec.x[i], pc.id)
     }
 }
 
